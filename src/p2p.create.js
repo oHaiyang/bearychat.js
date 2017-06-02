@@ -22,7 +22,7 @@ export default function p2pCreate(payload) {
     };
 
     /* eslint-disable */
-    const api = getBasePath('https://api.bearychat.com/v1') + '/p2p.create';
+    const api = getBasePath('https://api.stage.bearychat.com/v1') + '/p2p.create';
     /* eslint-enable */
     fetch(api, opts).then(resolve).catch(reject);
   });

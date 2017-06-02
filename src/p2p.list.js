@@ -19,7 +19,7 @@ export default function p2pList(payload) {
     };
 
     /* eslint-disable */
-    const api = getBasePath('https://api.bearychat.com/v1') + '/p2p.list?' + qs.stringify(payload);
+    const api = getBasePath('https://api.stage.bearychat.com/v1') + '/p2p.list?' + qs.stringify(payload);
     /* eslint-enable */
     fetch(api, opts).then(resolve).catch(reject);
   });

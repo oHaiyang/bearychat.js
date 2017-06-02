@@ -22,7 +22,7 @@ export default function sessionChannelCreate(payload) {
     };
 
     /* eslint-disable */
-    const api = getBasePath('https://api.bearychat.com/v1') + '/session_channel.create';
+    const api = getBasePath('https://api.stage.bearychat.com/v1') + '/session_channel.create';
     /* eslint-enable */
     fetch(api, opts).then(resolve).catch(reject);
   });

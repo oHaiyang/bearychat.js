@@ -19,7 +19,7 @@ export default function userList(payload) {
     };
 
     /* eslint-disable */
-    const api = getBasePath('https://api.bearychat.com/v1') + '/user.list?' + qs.stringify(payload);
+    const api = getBasePath('https://api.stage.bearychat.com/v1') + '/user.list?' + qs.stringify(payload);
     /* eslint-enable */
     fetch(api, opts).then(resolve).catch(reject);
   });

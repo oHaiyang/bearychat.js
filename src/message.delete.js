@@ -22,7 +22,7 @@ export default function messageDelete(payload) {
     };
 
     /* eslint-disable */
-    const api = getBasePath('https://api.bearychat.com/v1') + '/message.delete';
+    const api = getBasePath('https://api.stage.bearychat.com/v1') + '/message.delete';
     /* eslint-enable */
     fetch(api, opts).then(resolve).catch(reject);
   });

@@ -19,7 +19,7 @@ export default function userInfo(payload) {
     };
 
     /* eslint-disable */
-    const api = getBasePath('https://api.bearychat.com/v1') + '/user.info?' + qs.stringify(payload);
+    const api = getBasePath('https://api.stage.bearychat.com/v1') + '/user.info?' + qs.stringify(payload);
     /* eslint-enable */
     fetch(api, opts).then(resolve).catch(reject);
   });

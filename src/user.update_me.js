@@ -22,7 +22,7 @@ export default function userUpdateMe(payload) {
     };
 
     /* eslint-disable */
-    const api = getBasePath('https://api.bearychat.com/v1') + '/user.update_me';
+    const api = getBasePath('https://api.stage.bearychat.com/v1') + '/user.update_me';
     /* eslint-enable */
     fetch(api, opts).then(resolve).catch(reject);
   });
